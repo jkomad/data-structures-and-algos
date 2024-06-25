@@ -1,0 +1,76 @@
+1. Big O:
+
+Takes into account two things:
+- Time Complexity (time to complete)
+- Space Complexity (memory)
+
+Important to understand both components when asked. 
+
+2. Worst Case:
+
+Best Case = Omega 
+Average Case = Theta
+Worst Case = Omicron (0)
+
+** When talking about Big 0, you are always talking about the worst case 
+
+3. Big 0: O(n) example 
+
+def print_items(n):
+	for i in range(n):
+		print(i) 
+		
+This function has a time complexity of 0(n). It is proportional. 
+
+4. Big 0: Drop Constants
+
+**Even if a function happens to have multiple disparate loops in it. If they aren't nested, you can simplify Big O notation of 0(2n), for example, to 0(n)
+
+5. Big 0: 0(n^2)
+
+def print_items(n):
+	for i in range(n):
+		for j in range(n):
+		print(i, j)
+		
+**Time complexity for function with 0(n^2) is much worse than 0(n) (line is much steeper) 
+
+6. Big 0: Drop Non-Dominants
+
+When dealing with multiple components of a function that each has their own associated time complexity, you can drop the least dominant terms (the components whose time complexity has the smallest effect on the function's overall time complexity)
+
+7. Big 0: 0(1):
+
+def add_items(n):
+	return n + n 
+	
+Also called constant time. Number of operations remains constant even as n increases. 
+
+**The most efficient Big 0
+
+8. Big 0: 0(log n):
+
+Mathematically, 0(log n) of a function takes into account how many times you have to divide the length of some list by 2 to get down to one item. 
+
+Implementation can drastically reduce the number of operations required to run a given function. 
+
+**The second most efficient (second only to 0(1))
+
+**0(nlog n) is the most efficient you can make a sorting algorithm 
+
+9. Big 0: Different Terms for Inputs 
+
+When trying to find the Big 0 notation for a function with more than 0 parameter, (i.e., def print_items(a, b)...), you can't equate both variables to n. 
+
+The most simplified you can make it is 0(a + b) 
+
+10. Big 0: Lists 
+
+Vanilla lists in Python have a problem with time complexity if you remove or add items to a list anywhere other than to the end. 
+
+11. Big 0: Wrap Up
+
+0(n^2): A loop within a loop 
+0(n): Proportional 
+0(log n): Divide and Conquer
+0(1): Constant

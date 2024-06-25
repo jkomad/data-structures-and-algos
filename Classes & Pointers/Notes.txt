@@ -1,0 +1,42 @@
+1. Classes: 
+
+Classes in Python allow you to functionally create your own data type.
+
+Looks like this:
+
+class Cookie:
+
+Composed of a few parts:
+
+1. A constructor:
+
+def __init__(self, color):
+	self.color = color 
+	
+**Difference between a method a function. If the self key word is present, it is a method, not a function. 
+
+Instance of the example class above could be created as follows:
+
+cookie_one = Cookie('green')
+
+2. methods:
+
+def get_color(self):
+	return self.color 
+	
+def set_color(self, color):
+	self.color = color 
+	
+2. Pointers:
+
+1. Integers
+
+When creating variables, you have to be cognizant of the fact that if you set a new variable to a previously created variable, you will be dealing with the same bits of memory and may inadvertently change a variable 
+
+Integers in python are immutable (if you set a variable to an integer, it cannot be changed)
+
+2. Dictionaries 
+
+If you set a new dictionary to be equal to a previously created dictionary, they will both point to the same place in memory. 
+
+If you change the value of a key in one of the two dictionaries, the value of the associated key in both dictionaries will change. 
