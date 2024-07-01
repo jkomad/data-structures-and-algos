@@ -1,49 +1,51 @@
-# 1. Big 0
+"""  
+1. Big 0
 
-# Append to end of linked list = 0(1)
-# The number of operations required to add to the end of a linked list is constant
+Append to end of linked list = 0(1)
+The number of operations required to add to the end of a linked list is constant
 
-# Pop an item from the end of a linked list = 0(n)
-# You must iterate through the entirety of a linked list in order to remove an item from the end
+Pop an item from the end of a linked list = 0(n)
+You must iterate through the entirety of a linked list in order to remove an item from the end
 
-# Append item to front = 0(1)
-# Number of operations is constant
+Append item to front = 0(1)
+Number of operations is constant
 
-# Remove item from front = 0(1)
-# Number of operations is constant
+Remove item from front = 0(1)
+Number of operations is constant
 
-# Add item somewhere in the middle = 0(n)
-# Requires iteration through list
+Add item somewhere in the middle = 0(n)
+Requires iteration through list
 
-# Remove item somewhere in the middle = 0(n)
-# Requires iteration through list
+Remove item somewhere in the middle = 0(n)
+Requires iteration through list
 
-# Look up (by value or index) = 0(n)
+Look up (by value or index) = 0(n)
 
-# Key Differences between Linked Lists and Python native lists
-# Pop:
-# Linked List = 0(n)
-# List = 0(1)
+Key Differences between Linked Lists and Python native lists
+Pop:
+Linked List = 0(n)
+List = 0(1)
 
-# Lookup by Index:
-# Linked List = 0(n)
-# List = 0(n1)
+Lookup by Index:
+Linked List = 0(n)
+List = 0(n1)
 
-# Prepend:
-# Linked List = 0(1)
-# List = 0(n)
+Prepend:
+Linked List = 0(1)
+List = 0(n)
 
-# Pop First:
-# Linked List = 0(1)
-# List = 0(n)
+Pop First:
+Linked List = 0(1)
+List = 0(n)
 
-# 2. Under the hood
+2. Under the hood
 
-# What is a Node
+What is a Node
 
-# A node is essentially a dictionary composed of two parts: the vale and the node pointer
+A node is essentially a dictionary composed of two parts: the vale and the node pointer
 
-# 3. Constructors
+3. Constructors
+"""
 
 
 class Node:
